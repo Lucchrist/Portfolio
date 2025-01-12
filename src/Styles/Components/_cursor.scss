@@ -1,0 +1,23 @@
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px; /* Diamètre initial */
+    height: 20px;
+    border: 2px solid #555; /* Bordure du cercle */
+    border-radius: 50%;
+    background-color: rgba(85, 85, 85, 0.2); /* Couleur centrale */
+    pointer-events: none; /* Empêche d'interférer avec les clics */
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease, width 0.15s ease, height 0.15s ease;
+    z-index: 9999;
+  
+    &.clicked {
+      width: 50px; /* Diamètre lors d'un clic */
+      height: 40px;
+      transform: translate(-50%, -50%) scale(1.5);
+      background-color: rgba(85, 85, 85, 0.5); /* Couleur plus foncée */
+      transition: transform 0.1s ease, background-color 0.1s ease;
+    }
+  }
+  

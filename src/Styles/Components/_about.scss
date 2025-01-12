@@ -1,0 +1,80 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e6e6e6, #f9f9f9);
+  
+    .about-content {
+      max-width: 50%;
+      color: #333;
+  
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #555;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-top: 1rem;
+  
+        span {
+          color: #0077ff;
+          font-weight: bold;
+        }
+      }
+  
+      .download-cv {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        text-decoration: none;
+        color: #0077ff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: all 0.3s;
+  
+        &:hover {
+          color: #004b99;
+        }
+  
+        .arrow-icon {
+          margin-left: 0.5rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  
+    .about-image {
+      max-width: 40%;
+      position: relative;
+  
+      .profile-picture {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+  
+      .badge {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.home {
+    text-align: center;
+    padding-top: 5rem;
+  
+    .hero {
+      padding: 2rem;
+  
+      h1 {
+        font-size: 2.5rem;
+        color: #ffa500;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: white;
+      }
+  
+      .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        color: white;
+        background: #ffa500;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.1);
+          background: lighten(#ffa500, 10%);
+        }
+      }
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  
