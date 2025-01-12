@@ -8,7 +8,7 @@ const About = () => {
   const handleMouseLeave = () => setIsHovered(false);
 
   const handleBadgeClick = () => {
-    // Redirection vers la vidéo
+    // Redirection vers la vidéo YouTube
     window.open("https://youtu.be/JrO46CJd9ns?si=MBUnr6l18fnIydOk", "_blank");
   };
 
@@ -28,7 +28,7 @@ const About = () => {
           enthousiaste à l'idée d'apprendre et de partager mes connaissances.
         </p>
         <a
-          href="/Portfolio/public/images/Tchomba_Luc_CV2024.pdf (1).pdf"
+          href="/Portfolio/images/Tchomba_Luc_CV2024.pdf (1).pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="download-cv"
@@ -39,7 +39,7 @@ const About = () => {
       </div>
       <div className="about-image">
         <img
-          src="/Portfolio/public/WhatsApp Image 2025-01-12 à 02.00.18_4a508435.jpg"
+          src="/Portfolio/photo proffessionel.jpg"
           alt="Luc Christian"
           className="profile-picture"
         />
@@ -50,11 +50,15 @@ const About = () => {
           onClick={handleBadgeClick}
         >
           <div className="text-circle">now playing · now playing · now playing ·</div>
-          <img
-            src="/Portfolio/public/WhatsApp Image 2025-01-12 à 02.22.27_217f85cd.jpg"
-            alt="Album Cover"
-            className="album-cover"
-          />
+          {isHovered ? (
+            <p className="song-title">" WIN WIN WIN : "</p>
+          ) : (
+            <img
+              src="/Portfolio/image musique.jpg"
+              alt="Album Cover"
+              className="album-cover"
+            />
+          )}
         </div>
       </div>
     </div>
