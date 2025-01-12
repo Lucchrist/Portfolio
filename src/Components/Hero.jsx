@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../Styles/Components/_hero.scss";
 import CustomCursor from "./CustomCursor";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -29,7 +30,7 @@ const Hero = () => {
         <p>Je suis un développeur passionné, spécialisé dans le développement web, mobile et les solutions basées sur l'intelligence artificielle.</p>
         <div className="cta-buttons">
           <a href="#projects" className="btn">Voir mes projets</a>
-          <a href="/about" className="btn-outline">En savoir plus sur moi</a>
+          <Link className="btn-outline" to="/about">En savoir plus sur moi</Link>
         </div>
         </div>
       </div>

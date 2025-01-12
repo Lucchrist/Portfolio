@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
+import About from "./Components/About";
 import CustomCursor from "./Components/CustomCursor";
-import About from "./Pages/About";
 
 import "./Styles/main.scss";
 
@@ -16,7 +16,7 @@ const App = () => {
         <main>
           <Routes>
             <Route path="/" element={<Hero />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/About" element={<About />} />
           </Routes>
         </main>
         <Footer />
