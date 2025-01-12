@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app">
+      <header className="header">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <nav>
+          <a href="#home">Accueil</a>
+          <a href="#projects">Projets</a>
+          <a href="#about">À propos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <section id="home">
+          <h2>Salut, je suis Luc!</h2>
+          <p>Développeur passionné par les projets créatifs et fonctionnels.</p>
+        </section>
+        <section id="projects">
+          <h2>Mes Projets</h2>
+          <div>
+            <h3>Projet 1</h3>
+            <p>Description ici...</p>
+          </div>
+        </section>
+        <section id="about">
+          <h2>À propos de moi</h2>
+          <p>Développeur web avec une passion pour...</p>
+        </section>
+        <section id="contact">
+          <h2>Contactez-moi</h2>
+          <form>
+            <input type="text" placeholder="Votre nom" />
+            <input type="email" placeholder="Votre email" />
+            <textarea placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2025 Luc</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
